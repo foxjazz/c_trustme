@@ -1,0 +1,24 @@
+﻿<Properties StartupConfiguration="{EB3C03C1-D272-458F-843A-8922B126FECC}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="trustme/Monitor.cs">
+    <Files>
+      <File FileName="trustme/Program.cs" Line="9" Column="29" />
+      <File FileName="trustme/Monitor.cs" Line="7" Column="6" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="trustme" expanded="True">
+            <Node name="trustme" expanded="True" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.trustme FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
