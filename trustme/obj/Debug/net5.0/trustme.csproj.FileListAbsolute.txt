@@ -18,3 +18,4 @@
 /Users/foxjazz/Projects/trustme/trustme/bin/Debug/net5.0/Sigil.dll
 /Users/foxjazz/Projects/trustme/trustme/bin/Debug/net5.0/System.Runtime.InteropServices.PInvoke.dll
 /Users/foxjazz/Projects/trustme/trustme/obj/Debug/net5.0/trustme.csproj.CopyComplete
+/Users/foxjazz/Projects/trustme/trustme/bin/Debug/net5.0/SecurityDriven.Inferno.dll

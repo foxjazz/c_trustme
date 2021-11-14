@@ -13,25 +13,26 @@ namespace trustme
         public static void createkey()
         {
             string cd = Directory.GetCurrentDirectory();
-            var fn = cd + "\\k.tmk";
+            var fn = cd + "/k.tmk";
+            var fn4 = cd + "/k4.tmk";
             var o = Aes.Create();
             o.GenerateKey();
             File.WriteAllBytes(fn, o.Key);
-            File.WriteAllBytes(fn + "4", o.IV);
+            File.WriteAllBytes(fn4, o.IV);
 
         }
 
         public static byte[] getKey()
         {
             string cd = Directory.GetCurrentDirectory();
-            var fn = cd + "\\k.tmk";
+            var fn = cd + "/k.tmk";
             return File.ReadAllBytes(fn);
 
         }
         public static byte[] getKeyIV()
         {
             string cd = Directory.GetCurrentDirectory();
-            var fn = cd + "\\k.tmk4";
+            var fn = cd + "/k4.tmk";
             return File.ReadAllBytes(fn);
 
         }
@@ -60,7 +61,7 @@ namespace trustme
         public static void Begin()
         {
             string cd = Directory.GetCurrentDirectory();
-            var fn = cd + "\\trust.tm";
+            var fn = cd + "/trust.tm";
             if (File.Exists(fn))
             {
                 var cdata = File.ReadAllBytes(fn);
@@ -76,7 +77,7 @@ namespace trustme
         public static void Save()
         {
             string cd = Directory.GetCurrentDirectory();
-            var fn = cd + "\\trust.tm";
+            var fn = cd + "/trust.tm";
             var data = Jil.JSON.Serialize(Monitor.tmData);
             byte[] cypherdata = encrypt(data);
             File.WriteAllBytes(fn, cypherdata);

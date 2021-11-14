@@ -6,11 +6,8 @@ namespace trustme
 {
     public class Monitor
     {
-        public Monitor()
-        {
-           
-        }
-
+        
+        
         public static Dictionary<string, string> tmData;
         public static void start()
         {
@@ -20,8 +17,9 @@ namespace trustme
                 string line = readl();
                 if (line.StartsWith("q") || line.StartsWith("e"))
                 {
-                    Console.WriteLine("Exiting Trustme.");
+                    Console.WriteLine("Saving--");
                     setup.Save();
+                    Console.WriteLine("Exited.");
                     return;
                 }
                 if (line == "add")

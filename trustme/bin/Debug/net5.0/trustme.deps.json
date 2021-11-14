@@ -8,10 +8,25 @@
     ".NETCoreApp,Version=v5.0": {
       "trustme/1.0.0": {
         "dependencies": {
+          "Inferno": "1.6.4",
           "Jil": "2.17.0"
         },
         "runtime": {
           "trustme.dll": {}
+        }
+      },
+      "Inferno/1.6.4": {
+        "dependencies": {
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "5.0.0",
+          "System.Security.Cryptography.Cng": "5.0.0",
+          "System.ValueTuple": "4.5.0"
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/SecurityDriven.Inferno.dll": {
+            "assemblyVersion": "1.6.4.0",
+            "fileVersion": "1.6.4.0"
+          }
         }
       },
       "Jil/2.17.0": {
@@ -191,6 +206,7 @@
           "System.Runtime": "4.1.0-rc2-24027"
         }
       },
+      "System.Formats.Asn1/5.0.0": {},
       "System.Globalization/4.0.11-rc2-24027": {
         "dependencies": {
           "System.Runtime": "4.1.0-rc2-24027"
@@ -323,6 +339,7 @@
           "System.Threading.Tasks": "4.0.11-rc2-24027"
         }
       },
+      "System.Numerics.Vectors/4.5.0": {},
       "System.ObjectModel/4.0.12-rc2-24027": {
         "dependencies": {
           "System.Collections": "4.0.11-rc2-24027",
@@ -407,6 +424,7 @@
         }
       },
       "System.Runtime/4.1.0-rc2-24027": {},
+      "System.Runtime.CompilerServices.Unsafe/5.0.0": {},
       "System.Runtime.Extensions/4.1.0-rc2-24027": {
         "dependencies": {
           "System.Runtime": "4.1.0-rc2-24027"
@@ -463,17 +481,9 @@
           "System.Text.Encoding": "4.0.11-rc2-24027"
         }
       },
-      "System.Security.Cryptography.Cng/4.1.0-rc2-24027": {
+      "System.Security.Cryptography.Cng/5.0.0": {
         "dependencies": {
-          "System.IO": "4.1.0-rc2-24027",
-          "System.Resources.ResourceManager": "4.0.1-rc2-24027",
-          "System.Runtime": "4.1.0-rc2-24027",
-          "System.Runtime.Extensions": "4.1.0-rc2-24027",
-          "System.Runtime.Handles": "4.0.1-rc2-24027",
-          "System.Runtime.InteropServices": "4.1.0-rc2-24027",
-          "System.Security.Cryptography.Algorithms": "4.1.0-rc2-24027",
-          "System.Security.Cryptography.Primitives": "4.0.0-rc2-24027",
-          "System.Text.Encoding": "4.0.11-rc2-24027"
+          "System.Formats.Asn1": "5.0.0"
         }
       },
       "System.Security.Cryptography.Csp/4.0.0-rc2-24027": {
@@ -553,7 +563,7 @@
           "System.Runtime.InteropServices": "4.1.0-rc2-24027",
           "System.Runtime.Numerics": "4.0.1-rc2-24027",
           "System.Security.Cryptography.Algorithms": "4.1.0-rc2-24027",
-          "System.Security.Cryptography.Cng": "4.1.0-rc2-24027",
+          "System.Security.Cryptography.Cng": "5.0.0",
           "System.Security.Cryptography.Csp": "4.0.0-rc2-24027",
           "System.Security.Cryptography.Encoding": "4.0.0-rc2-24027",
           "System.Security.Cryptography.OpenSsl": "4.0.0-rc2-24027",
@@ -621,6 +631,7 @@
           "System.Runtime": "4.1.0-rc2-24027"
         }
       },
+      "System.ValueTuple/4.5.0": {},
       "System.Xml.ReaderWriter/4.0.11-rc2-24027": {
         "dependencies": {
           "System.Collections": "4.0.11-rc2-24027",
@@ -663,6 +674,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Inferno/1.6.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+1MN49CAo/ga3p9Or+pjv8V5AK7tJRWtsIHYfGbfxnzfleNywYHILWSaP8COU4lwZtSQR/1iKpGUJGfXUnFR3Q==",
+      "path": "inferno/1.6.4",
+      "hashPath": "inferno.1.6.4.nupkg.sha512"
     },
     "Jil/2.17.0": {
       "type": "package",
@@ -839,6 +857,13 @@
       "path": "system.diagnostics.tracing/4.1.0-rc2-24027",
       "hashPath": "system.diagnostics.tracing.4.1.0-rc2-24027.nupkg.sha512"
     },
+    "System.Formats.Asn1/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MTvUIktmemNB+El0Fgw9egyqT9AYSIk6DTJeoDSpc3GIHxHCMo8COqkWT1mptX5tZ1SlQ6HJZ0OsSvMth1c12w==",
+      "path": "system.formats.asn1/5.0.0",
+      "hashPath": "system.formats.asn1.5.0.0.nupkg.sha512"
+    },
     "System.Globalization/4.0.11-rc2-24027": {
       "type": "package",
       "serviceable": true,
@@ -923,6 +948,13 @@
       "path": "system.net.sockets/4.1.0-rc2-24027",
       "hashPath": "system.net.sockets.4.1.0-rc2-24027.nupkg.sha512"
     },
+    "System.Numerics.Vectors/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
+      "path": "system.numerics.vectors/4.5.0",
+      "hashPath": "system.numerics.vectors.4.5.0.nupkg.sha512"
+    },
     "System.ObjectModel/4.0.12-rc2-24027": {
       "type": "package",
       "serviceable": true,
@@ -1000,6 +1032,13 @@
       "path": "system.runtime/4.1.0-rc2-24027",
       "hashPath": "system.runtime.4.1.0-rc2-24027.nupkg.sha512"
     },
+    "System.Runtime.CompilerServices.Unsafe/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZD9TMpsmYJLrxbbmdvhwt9YEgG5WntEnZ/d1eH8JBX9LBp+Ju8BSBhUGbZMNVHHomWo2KVImJhTDl2hIgw/6MA==",
+      "path": "system.runtime.compilerservices.unsafe/5.0.0",
+      "hashPath": "system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
+    },
     "System.Runtime.Extensions/4.1.0-rc2-24027": {
       "type": "package",
       "serviceable": true,
@@ -1049,12 +1088,12 @@
       "path": "system.security.cryptography.algorithms/4.1.0-rc2-24027",
       "hashPath": "system.security.cryptography.algorithms.4.1.0-rc2-24027.nupkg.sha512"
     },
-    "System.Security.Cryptography.Cng/4.1.0-rc2-24027": {
+    "System.Security.Cryptography.Cng/5.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-QILmzqCpi0F9+DK5Z4/w0VW7gu07CpXksTxhkjqGspxuh7KSd+G2lsIM7vUEZaWvuwJQyQRCNRMALC7u/tgY+g==",
-      "path": "system.security.cryptography.cng/4.1.0-rc2-24027",
-      "hashPath": "system.security.cryptography.cng.4.1.0-rc2-24027.nupkg.sha512"
+      "sha512": "sha512-jIMXsKn94T9JY7PvPq/tMfqa6GAaHpElRDpmG+SuL+D3+sTw2M8VhnibKnN8Tq+4JqbPJ/f+BwtLeDMEnzAvRg==",
+      "path": "system.security.cryptography.cng/5.0.0",
+      "hashPath": "system.security.cryptography.cng.5.0.0.nupkg.sha512"
     },
     "System.Security.Cryptography.Csp/4.0.0-rc2-24027": {
       "type": "package",
@@ -1153,6 +1192,13 @@
       "sha512": "sha512-AA9O27bBDE+sNy3PsN3RLoHaQzK7OldejkpXoi3UAeVcR+8Yr4O0UmcdCkucE4KfGk/ID+BxHCWdws4FEDV+4w==",
       "path": "system.threading.timer/4.0.1-rc2-24027",
       "hashPath": "system.threading.timer.4.0.1-rc2-24027.nupkg.sha512"
+    },
+    "System.ValueTuple/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-okurQJO6NRE/apDIP23ajJ0hpiNmJ+f0BwOlB/cSqTLQlw5upkf+5+96+iG2Jw40G1fCVCyPz/FhIABUjMR+RQ==",
+      "path": "system.valuetuple/4.5.0",
+      "hashPath": "system.valuetuple.4.5.0.nupkg.sha512"
     },
     "System.Xml.ReaderWriter/4.0.11-rc2-24027": {
       "type": "package",
