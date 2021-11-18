@@ -8,28 +8,29 @@ namespace trustme
     {
         
         
-        public static Dictionary<string, string> tmData;
+        
         public static void start()
         {
+            var ds = new DataStore();
             while (true)
             {
                 Console.Write(">>");
                 string line = readl();
+                line = line.Replace("-", "");
                 if (line.StartsWith("q") || line.StartsWith("e"))
                 {
                     Console.WriteLine("Saving--");
-                    setup.Save();
+                    ds.Save();
                     Console.WriteLine("Exited.");
                     return;
                 }
                 if (line == "add")
                 {
                     Console.Write("\r\nname:");
-                    string data = readl();
+                    string data = Console.ReadLine();
                     Console.Write("password:");
-                    string pw = readl();
-                    tmData.Remove(data);
-                    tmData.Add(data, pw);
+                    string pw = Console.ReadLine();
+                    ds.AddKeyV(data, pw);
                 }
 
                 if (line == "find")
@@ -37,9 +38,9 @@ namespace trustme
                     Console.Write("\r\nname:");
                     string data = readl();
                     Console.WriteLine("Key List");
-                    for (int i = 0; i < tmData.Count; i++)
+                    for (int i = 0; i < ds.GetKeys().Count; i++)
                     {
-                        string key = tmData.Keys.ToList()[i];
+                        string key = ds.GetKeys()[i];
                         if (key.StartsWith(data))
                         {
                             Console.WriteLine(key);
@@ -53,15 +54,11 @@ namespace trustme
                     Console.Write("\r\nname:");
                     string data = readl();
                     string val;
-                    if (tmData.TryGetValue(data, out val)) 
-                    {
-
-                        Console.WriteLine(val);
-                    }
-                    else
-                    {
-                        Console.WriteLine("not found");
-                    }
+                    Console.WriteLine(ds.GetKeyV(data));
+                }
+                if (line == "help")
+                {
+                    Console.WriteLine("Commands Are: get ; find ; add; q: quit; e: exit");
                 }
 
             }

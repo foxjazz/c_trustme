@@ -1,33 +1,36 @@
 {
   "format": 1,
   "restore": {
-    "/Users/foxjazz/Projects/trustme/trustme/trustme.csproj": {}
+    "Z:\\Code\\c_trustme\\trustme\\trustme.csproj": {}
   },
   "projects": {
-    "/Users/foxjazz/Projects/trustme/trustme/trustme.csproj": {
+    "Z:\\Code\\c_trustme\\trustme\\trustme.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/foxjazz/Projects/trustme/trustme/trustme.csproj",
+        "projectUniqueName": "Z:\\Code\\c_trustme\\trustme\\trustme.csproj",
         "projectName": "trustme",
-        "projectPath": "/Users/foxjazz/Projects/trustme/trustme/trustme.csproj",
-        "packagesPath": "/Users/foxjazz/.nuget/packages/",
-        "outputPath": "/Users/foxjazz/Projects/trustme/trustme/obj/",
+        "projectPath": "Z:\\Code\\c_trustme\\trustme\\trustme.csproj",
+        "packagesPath": "C:\\Users\\joe\\.nuget\\packages\\",
+        "outputPath": "Z:\\Code\\c_trustme\\trustme\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "/Users/foxjazz/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\joe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -38,8 +41,8 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
             "Inferno": {
               "target": "Package",
@@ -65,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
