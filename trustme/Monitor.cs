@@ -36,7 +36,7 @@ namespace trustme
                 if (line == "find")
                 {
                     Console.Write("\r\nname:");
-                    string data = readl();
+                    string data = readln();
                     Console.WriteLine("Key List");
                     for (int i = 0; i < ds.GetKeys().Count; i++)
                     {
@@ -49,16 +49,23 @@ namespace trustme
                     Console.WriteLine("Ended ------");
                 }
 
+                if (line == "list")
+                {
+                    foreach (var key in ds.GetKeys().ToArray())
+                    {
+                        Console.WriteLine(key);
+                    }
+                }
                 if (line == "get")
                 {
                     Console.Write("\r\nname:");
-                    string data = readl();
+                    string data = readln();
                     string val;
                     Console.WriteLine(ds.GetKeyV(data));
                 }
                 if (line == "help")
                 {
-                    Console.WriteLine("Commands Are: get ; find ; add; q: quit; e: exit");
+                    Console.WriteLine("Commands Are: get ; find ; add; list; q: quit; e: exit");
                 }
 
             }
@@ -67,6 +74,11 @@ namespace trustme
         public static string readl()
         {
             return Console.ReadLine().ToLower();
+        }
+        
+        public static string readln()
+        {
+            return Console.ReadLine();
         }
     }
 }

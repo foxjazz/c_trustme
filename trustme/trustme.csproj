@@ -3,7 +3,12 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net6.0</TargetFramework>
+    <ApplicationIcon>trustme.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="trustme.ico" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Inferno" Version="1.6.4" />
